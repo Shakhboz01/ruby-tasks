@@ -7,6 +7,8 @@ class DecimalToBinaryConverter
   end
 
   def convert_to_binary_hash
-    @decimal_array.map {|number| number.to_s(2)}
+    new_hash = {}
+    @decimal_array.map {|number| new_hash[number] = number.to_s(2)}
+    new_hash.to_h
   end
 end

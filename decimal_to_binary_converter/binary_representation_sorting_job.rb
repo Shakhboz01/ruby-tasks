@@ -20,3 +20,4 @@ end
 # result
 job = BinaryRepresentationSortingJob.new([3, 7, 8, 9, 13])
 puts job.run
+# run this job: `ruby decimal_to_binary_converter\binary_representation_sorting_job.rb`
