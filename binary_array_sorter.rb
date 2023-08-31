@@ -12,7 +12,7 @@ class BinaryArraySorter
   end
 
   def sort_binary_hash(binary_hash, ascending_order = @config_data['ascending_order'])
-    sorted_hash = binary_hash.sort_by { |k, v| [count_binary_number(v)] }
+    sorted_hash = binary_hash.sort_by { |number| [count_binary_number(number)] }
     sorted_hash = sorted_hash.reverse unless ascending_order
     sorted_hash
   end
